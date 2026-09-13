@@ -1,0 +1,19 @@
+CREATE TABLE class_list (
+SN TEXT PRIMARY KEY,
+CLASS INTERGER,
+SECTION TEXT,
+RN INTEGER, 
+COUNTRY TEXT
+);
+
+INSERT INTO class_list(SN,CLASS,SECTION,RN,COUNTRY)
+VALUES("MICHEAEL KAISER",9,"E",10,"GERMANY"),
+("Don Lorenzo", 9, "A",2,"ITALY"),
+("Sae Itoshi", 11, "C",10,"JAPAN");
+
+SELECT * FROM class_list;
+
+SELECT * FROM class_list WHERE RN==10;
+SELECT * FROM class_list WHERE CLASS==9;
+DROP TABLE class_list;
+ 
